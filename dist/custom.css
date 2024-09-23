@@ -1,0 +1,140 @@
+header .searchbar {
+  position: relative;
+}
+
+header .searchbar img {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header .connexion {
+  position: relative;
+}
+
+header .connexion .identity p {
+  line-height: 1rem;
+}
+
+header .connexion-menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  padding: 5px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+header .connexion-menu.showMenu {
+  display: flex;
+}
+
+header .connexion-menu a {
+  font-size: 1.1rem;
+}
+
+section.presentation {
+  background-image: url(images/fondHeader.jpg);
+}
+
+section.presentation h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+section.presentation p,
+a {
+  font-size: 1.2rem;
+}
+
+section.category-container h2 {
+  font-size: 1.8rem;
+}
+
+section.category-container .article {
+  min-width: calc((100% / 7) - 1rem);
+}
+
+section.category-container .article .product {
+  position: relative;
+  background-image: url(images/backgroundArticle.webp);
+  width: 100%;
+  height: 220px;
+}
+
+section.category-container .article .product .origin {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 4px;
+}
+
+section.category-container .article .bottom .name p {
+  font-size: 1rem;
+}
+
+section.category-container .article .bottom .name span {
+  font-size: 0.7rem;
+}
+
+section.category-container .article .bottom .price {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+}
+
+section.category-container .article .bottom .quantity {
+  font-size: 0.9rem;
+}
+
+section.category-container .article .bottom .price-quantity {
+  font-size: 0.8rem;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+.h-full {
+  height: 100%;
+}
+
+.connexionPage {
+  background-image: url(images/all_produits.jpg);
+  background-size: cover;
+}
+
+.connexionPage .formContainer h2 {
+  font-size: 1.2rem;
+}
+
+.connexionPage .formContainer form {
+  width: 350px;
+}
+
+.connexionPage .formContainer form .forgot {
+  font-size: 1rem;
+}
+
+.connexionPage .formContainer form .connexion-button {
+  font-size: 1.2rem;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+.my-profile p {
+  font-size: 2.2rem;
+}
+
+.functionality {
+  width: 30%;
+}
+
+.functionality h3 {
+  font-size: 1.5rem;
+}
+
+.functionality p {
+  font-size: 1.1rem;
+}
