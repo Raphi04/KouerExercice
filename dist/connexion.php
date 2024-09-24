@@ -26,8 +26,8 @@ if(array_key_exists("email", $_POST)) {
         if($getUser !== 404) {
             session_start();
             $_SESSION["logged"] = true;
-            $_SESSION["lastname"] = $getUser["lastname"];
             $_SESSION["firstname"] = $getUser["firstname"];
+            $_SESSION["lastname"] = $getUser["lastname"];
 
             //On redirige à la page d'accueil
             header("location:index.php");
@@ -41,7 +41,7 @@ if(array_key_exists("email", $_POST)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kouer - Connexion ou inscription</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="custom.css">
 </head>

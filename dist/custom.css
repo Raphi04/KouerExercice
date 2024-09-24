@@ -138,3 +138,31 @@ section.category-container .article .bottom .price-quantity {
 .functionality p {
   font-size: 1.1rem;
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+.double-input > div {
+  width: 48%;
+}
+
+.greenText {
+  color: rgb(0, 195, 0);
+}
+
+.cgu-box input[type="checkbox"] {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.cgu-box label {
+  font-size: 0.8rem;
+}
+
+.cgu-box label a {
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+#sendButton:disabled {
+  background-color: rgb(220, 220, 220);
+}

@@ -4,11 +4,11 @@ Class User {
     private $conn;
     public $id;
 
-    private $firstname;
-    private $lastname;
+    public $firstname;
+    public $lastname;
 
     public $mobile;
-
+    public $birth;
     public $email;
     public $password;
 
@@ -32,6 +32,24 @@ Class User {
             }
         } else {
             return 404;
+        }
+    }
+
+    function createUser() {
+        $sql = "INSERT INTO `users` (`firstname`, `lastname`, `email`, `mobile`, `birth`, `password`) VALUES (:firstname, :lastname, :email, :mobile, :birth, :password)";
+        $stmt = $this->conn->prepare($sql);
+        $options = [
+            "firstname" => $this->firstname,
+            "lastname" => $this->lastname,
+            "email" => $this->email,
+            "mobile" => $this->mobile,
+            "birth" => $this->birth,
+            "password" => $this->password
+        ];
+        if($stmt->execute($options)) {
+            return "Utilisateur ajouté à la base de données.";
+        } else {
+            return 500;
         }
     }
 
